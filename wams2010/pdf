@@ -1,0 +1,5 @@
+pdflatex tGISguide
+bibtex tGISguide
+pdflatex tGISguide
+pdflatex tGISguide
+xpdf -z 150 tGISguide.pdf

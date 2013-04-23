@@ -1,0 +1,34 @@
+\newcommand{\bibfont}{\fontsize{10}{12}\selectfont} \newcommand{\noopsort}[1]{}
+  \newcommand{\printfirst}[2]{#1} \newcommand{\singleletter}[1]{#1}
+  \newcommand{\switchargs}[2]{#2#1}
+\begin{thebibliography}{4}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[\protect\citeauthoryear{An {\itshape{et~al.}}}{2005}]{Li2005}
+\textsc{An, L., Brown, D., Rand, W. {\normalfont and} Page, S.}, 2005, Can
+  statistical methods on land-Use change patterns calibrate agent-based
+  models?. In {\itshape Proceedings of the }{\itshape 8th International
+  Conference on GeoComputation}, University of Michigan, Eastern Michigan
+  University, USA, August
+  \url{http://www.cscs.umich.edu/research/projects/sluce/publications/An_geoco%
+mp_%20abs.pdf}; accessed 23 August, 2006.
+
+\bibitem[\protect\citeauthoryear{Iesim}{2009}]{iesim}
+\textsc{Iesim}, ``Simulating Intervention \& Events'',
+  \url{http://www.iesim.co.uk}; accessed 13 December, 2009 2009.
+
+\bibitem[\protect\citeauthoryear{Nowak {\normalfont and}
+  Lewenstein}{1996}]{Nowak1996}
+\textsc{Nowak, A. {\normalfont and} Lewenstein, M.}, 1996In {\itshape Computer
+  simulations from the philosophy of science point of view}  (Dodrecht,
+  Netherlands: Kluwer Academic Publishers)
+  \url{http://cognitrn.psych.indiana.edu/rgoldsto/complex/nowak.pdf}; accessed
+  23 August, 2006, pp. 249--285.
+
+\bibitem[\protect\citeauthoryear{Simoes}{2007}]{Simoes2007}
+\textsc{Simoes, J.}, 2007, An agent-based approach to spatial epidemics through
+  GIS. PhD thesis, Department of Geography, University College of London,
+  University College of London, Gower Street, London WC1E 6BT UK
+  \url{http://www.casa.ucl.ac.uk/JoanaMargarida/thesis_post_viva.pdf}.
+
+\end{thebibliography}

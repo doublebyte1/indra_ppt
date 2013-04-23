@@ -1,0 +1,17 @@
+
+The abstract presents an interesting perpective on the spread of disease with an innovative approach to 
+methodology
+
+ 
+
+It is not quite clear to this reviewer whether the research intends to focus on the methodology in the 
+model or the results produced by the model and this should be clarified. Perhaps the use of a focus 
+question in the abstract could accomplish this. It would be useful to extend the foundation research 
+into the different types of networks that more accurately represent social structure, as the authors 
+correctly identify (eg see Jennifer Badham?s work). There needs to be a broader sourcing of reference 
+material particularly in the social network aspects of the study ? this area is very sparse (authors 
+Scott; Knoke; Wasserman; Valente and others are useful here). Work on diffusion in social networks would 
+also support this study. Further extension to the model could include cognitive aspects of the agents in 
+the ABM.
+
+ 

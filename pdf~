@@ -1,0 +1,4 @@
+pdflatex cloud6
+pdflatex cloud6
+okular cloud6.pdf
+
