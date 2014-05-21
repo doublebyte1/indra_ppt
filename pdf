@@ -1,4 +1,4 @@
-pdflatex iesim
-pdflatex iesim
-okular iesim.pdf
+pdflatex indra
+pdflatex indra
+okular indra.pdf
 
