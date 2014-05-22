@@ -193,7 +193,7 @@ For longer roads, it may be actually useful to split them into \textbf{homogeneo
 \frametitle{What About Space? (cont.)}
 But the space dimension does not end up in the representation of the input variables (implicit). Space \textbf{relationships should also be explicitly stated in the model}.
 \begin{itemize}
-\item Spatial Auto correlation (as opposed to spatial independence) is an arrangement of the accidents where the locations are related to each other.
+\item Spatial Auto correlation (as !opposed to spatial independence) is an arrangement of the accidents where the locations are related to each other.
 \item Numerous studies have shown that accounting for spatial correlation among the analyzed observations is a big step toward a better safety assessment [cite].
 \item This is actually a \textit{weakness} of many models; on the Baysean Network model [cite], although acknowledged, spatial correlations were not considered in the development of the risk model; on conditionally autoregressive models (CAR) spatial effects are introduced as random.
 \end{itemize}
@@ -232,8 +232,43 @@ Study of how circumstances affect people in episodes of bad weather [cite].Data 
 
 \begin{frame}
 \frametitle{Considering Space: A more complex example}
-Self Organizing Maps
+The Self Organizing Map (SOM) is an artificial neural network based on an unsupervised learning process that performs a gradual and nonlinear mapping of high dimensional input data onto
+an ordered and structured array of nodes, generally of lower dimension [cite].
+\begin{itemize}
+\item <1-> The SOM compresses information and reduces dimensionality;
+\item <2-> It transforms nonlinear statistical relationships in geometric relationships;
+\item <3-> It is a visualization method for multidimensional data;
+\item <4-> Unlike other NN models, it \textbf{preserves spatial structure by guaranteeing the topological order of its units};
+\item <5-> Unlike other models (e.g.: Support Vector Machines), as the training is unsupervised, it can prevent the analyst's arbitrary perspective.
+\end{itemize}
+\end{frame}
 
+\begin{frame}
+\frametitle{Self Organizing Maps}
+How-to do prediction:
+- training
+- mapping
+speak about the relevance
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Self Organizing Maps (cont.)}
+visualizations
+show types of visualizations
+\end{frame}
+
+\begin{frame}
+\frametitle{Self Organizing Maps (cont.)}
+Examples
+speak about accuracy
+focus on the accident example
+\end{frame}
+
+\begin{frame}
+\frametitle{Self Organizing Maps (cont.)}
+- what we want as an input
+- what we want to do (type of road incidences)
 \end{frame}
 
 \begin{frame}
