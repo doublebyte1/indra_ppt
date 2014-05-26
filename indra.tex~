@@ -49,7 +49,7 @@ road accidents are still one of the main accidental causes of death and injury (
 victims~\cite{calabria}.
 %Identification of factors that affect the occurrence of road accidents has attracted the attention of many researchers in the field of traffic
 %safety.\\%Recognizing such elements may help not only to reduce the number of deaths in traffic crashes, but also the number of accidents with severe injuries [cite].\\ 
-\item The assessment of the occurrence of road accidents has therefore attracted the attention of many researchers.
+\item The assessment of the occurrence of road incidences in general, and accidents in particular, has attracted the attention of many researchers.
 \end{itemize}
 \end{overprint}
 \end{frame}
@@ -82,14 +82,14 @@ Ocurrence (0,1) and location (x,y) of incidents, as a function (pairwise or mult
 %\item involvement of pedestrians;
 \end{itemize}
 }
-Some of these variables are continuous in space and most of them change over time.\\
+Some of these variables are continuous in \textbf{space} and most of them change over \textbf{time}.\\
 \end{frame}
 
 \begin{frame}
 \frametitle{Modelling Approaches: Classical Statistics}
 \begin{itemize}
 \item<1-> The most common approach applied in early works is to model the interaction between each dependent variable and incidence frequencies by means of conventional (multiple) linear regression models~\cite{bayesian}; these \textbf{do not take in account covariance between response variables}. 
-\item<2-> Most of these models use a Normal or Poisson distribution that is not well-suited to the scarce nature of incidence data. Accident data is often characterized by small observed mean values and a large number of zero counts leading to the well discussed phenomenon of \textbf{over-dispersion}: the presence of greater variability (statistical dispersion) in a data set than would be expected based on a given simple statistical model.
+\item<2-> Most of these models use a Normal or Poisson distribution that is not well-suited to the scarce nature of incidence data. Accident data is often characterized by small observed mean values and a large number of zero counts leading to the well discussed phenomenon of \textbf{over-dispersion}: the presence of greater variability (statistical dispersion) in a data set than would be expected based on a given simple statistical model.%sparse data  in large contingency tables.
 \item<3-> None of these models addresses explicitly the question of \textbf{spatial autocorrelation}: the value of samples taken close to each other are more likely to have similar magnitude than by chance alone.
 \end{itemize}
 \end{frame}
@@ -101,7 +101,7 @@ be identified before modeling. \textbf{This is not the case of the large and com
 %\footnote{\tiny{It should be noted that more complex models such as Negative Binomial (NB) and Poisson-lognormal are able to overcome these limitations}} [cite]
 %Poisson NB: they have their own assumptions and pre-defined underrlying relationship between dependent and independent variables
 %. If these assumptions are violated, the model could lead to erroneous estimation of accident likelihood.
-\vspace{5mm}
+\vspace{5mm}%This is where data mining comes into play.
 \textbf{Data mining} can be defined as the \textit{nontrivial process of identifying valid, novel, potentially useful, and ultimately understandable patterns in large amounts of data} ~\cite{sets}.
 \small{
 \begin{itemize}
@@ -142,19 +142,21 @@ Often Data Mining Techniques are combined together, or with traditional statisti
 \end{frame}
 
 \begin{frame}
-\frametitle{Bayesian Approach}
+\frametitle{Case Study: Bayesian Approach}
 In this case study~\cite{bayesian} it is used a mixed-model to predict the ocurrence of road accidents:
+\small{
 \begin{itemize}
-\item<2-> Multivariate Poisson-lognormal regression analysis, which facilitates taking into account the covariance structure of the model response variables as well as
+\item Multivariate Poisson-lognormal regression analysis, which facilitates taking into account the covariance structure of the model response variables as well as
 over-dispersion effects.
-\item<3->  Bayesian Probabilistic Networks (BPN) that take into account aleatory and epistemic uncertainties as well as possibly non-linear dependencies between the risk indicating variables and the response variables.
+\item Bayesian Probabilistic Networks (BPN) that take into account aleatory and epistemic uncertainties as well as possibly non-linear dependencies between the risk indicating variables and the response variables.
 \end{itemize}
+}
 The BPN is based on the regression model, but its parameters are updated by learning algorithms; the update \textit{only replaces the response variables that have been observed in conjunction with the accident}. This approach allows to cope with different degrees of completness of the dataset.\\
 The methodology is illustrated using data of the Austrian rural motorway network (+/- 80 000 vehicles/day) and the quality of the prediction was found to be 73\%.
 \end{frame}
 
 \begin{frame}
-\frametitle{Association Algorithm}
+\frametitle{Case Study: Association Algorithm}
 In this case study~\cite{sets} an association algorithm is used to obtain a descriptive analysis of accident high risk areas. This algorithm \textbf{identifies the accident circumstances that frequently occur together}. We are able to target the highest frequencies through a \textit{minimum support value}.\\
 This algorithm was applied to road accident data in Belgian (1997-1999). 
 %The dataset is long enough to limit random fluctuations in the accident counts and short enough to limit changes in road and traffic conditions.
@@ -165,7 +167,7 @@ Some factors that were frequently linked to accidents:
 \item Rainy conditions;
 \item Involvement of young pedestrians;
 \end{itemize}
-Some of these risk factors could be reduced with signing or roundabouts in these zones;
+Some of these risk factors could be reduced by adding simple signs, or roundabouts in these zones;
 \end{frame}
 
 \begin{frame}
@@ -183,6 +185,7 @@ Road incidences happen in time and \textbf{space}. The contact with the spatial 
 %Often accident data comes in very small units (e.g.: 100 m). Sometimes a spatial aggregation can be recommended, for getting rid of location error, and
 %also to increase the magnitude of the results. We have to be very carefull on how-to do this generalisation.\\
 The most frequent approach to represent the road structure is to use networks. Networks represent lanes as \textit{links} and intersections as \textit{nodes}.
+%There are also gridifications of the networks (e.g.: CA)
 \begin{figure}
 \includegraphics[scale=0.40]{road_network.png}
 \caption{\tiny{Road network in  Hillsborough~\cite{zeng}}}
@@ -203,7 +206,7 @@ Geographical Information Systems (GIS) can be a valuable tool for representing/i
 
 \begin{frame}
 \frametitle{Considering Space: A Simple Example}
-Study of how circumstances affect people in episodes of bad weather~\cite{calabria}.Data from newspappers was collected for a period of 10 yrs, in the region of Calabria.
+Study of how circumstances affect people in episodes of bad weather~\cite{calabria}. Data from newspappers was collected for a period of 10 yrs, in the region of Calabria.
 \begin{figure}
 \includegraphics[scale=0.55]{damage_agent.png}
 \caption{\tiny{Localisation of damage to people sorted according to the type of damaging agent. (1) Victims, (2) injured, and (3) involved people~\cite{calabria}}}
@@ -233,7 +236,7 @@ Study of how circumstances affect people in episodes of bad weather~\cite{calabr
 
 \begin{frame}
 \frametitle{Considering Space: A more complex example}
-The Self Organizing Map (SOM) is an artificial neural network based on an unsupervised learning process that performs a gradual and nonlinear mapping of high dimensional input data onto an ordered and structured array of nodes, generally of lower dimension~\cite{gorricha}.
+The Self Organizing Map (SOM) is an \textbf{artificial neural network} based on an \textbf{unsupervised learning process} that performs a gradual and \textbf{nonlinear} mapping of high dimensional input data onto an ordered and structured array of nodes, generally of lower dimension~\cite{gorricha}.
 \begin{itemize}
 \item <1-> The SOM compresses information and reduces dimensionality;
 \item <2-> It transforms nonlinear statistical relationships in geometric relationships;
@@ -271,7 +274,7 @@ The process of creating SOMs undergoes two main stages~\cite{goat}:
 \begin{frame}
 \frametitle{Self Organizing Maps (cont.)}
 When applied to geo-referenced data, this technique may allow the
-explanation of complex structures and phenomena in a spatial perspective~\cite{gorricha}.\\
+explanation of complex structures and phenomena, in a spatial perspective~\cite{gorricha}.\\
 \vspace{5mm}
 Going back to geographical space:
 %we transformed the data space in output space, but we can go back to the data space
@@ -294,22 +297,22 @@ Going back to geographical space:
 \frametitle{Self Organizing Maps (cont.)}
 SOM's have been used for estimating:
 \begin{itemize}
-\item the risk for cancer patients (demonstrated accuracy in classification)~\cite{cancer};
+\item the risk for cancer patients (\textit{demonstrated accuracy in classification})~\cite{cancer};
 \item underlying physical parameters from near infrared planetary spectra (83\%-100\% accuracy)~\cite{infrared};
-\item the distance of an astronomic object based on its color (when compared to other techniques offer a competitive choice in terms of low-RMSE, and percentage of outliers)~\cite{redshift};
+\item the distance of an astronomic object based on its color (\textit{when compared to other techniques offer a competitive choice in terms of low-RMSE, and percentage of outliers})~\cite{redshift};
 %root-mean-square error
-\item productivity of goat and sheep farms, based on herd management practices (the results are coherent with the animal science criteria that are common for this problem)~\cite{goat};
+\item productivity of goat and sheep farms, based on herd management practices (\textit{the results are coherent with the animal science criteria that are common for this problem})~\cite{goat};
 %\item types of accident crashes (e.g.: drunk speeding, intersection, etc)[cite];
 \end{itemize}
-The approach has been showed to be an evidence-based predictive tool with high-knowledge-generation capabilities, very valuable to support decision-making ~\cite{cancer}.
+The approach has been showed to be an \textbf{evidence-based predictive tool with high-knowledge-generation capabilities}, very valuable to \textbf{support decision-making} ~\cite{cancer}.
 \end{frame}
 
 \begin{frame}
 \frametitle{SOM's and Road Incidences}
 \begin{itemize}
 \item Real-world road incidences are characterized by complicated multi-dimensionality mutual relationships.
-\item We want to propose a SOM to capture and extract the essence of these relationships by visualizing the results of incidence clustering.
-\item Moreover, we want to be able to predict these clusters of incidences, for a new set of input variables.
+\item We want to propose a SOM to capture and extract the essence of these relationships by \textbf{visualizing the results of incidence clustering}.
+\item Moreover, we want to be able to \textbf{predict these clusters of incidences}, for a new set of input variables.
 \end{itemize}
 SOMs have been used in a study to estimate the effectiveness of Crash Avoidance technologies~\cite{crash}. They identified and characterized clusters of accidents, based on the relationships between (normalized) variables.
 \begin{itemize}
@@ -317,6 +320,7 @@ SOMs have been used in a study to estimate the effectiveness of Crash Avoidance 
 \item <3-> 16,180 fatal passenger car drivers;
 \item <4-> 48 variables;
 \end{itemize}
+%drivers, five clusters were created, and they are characterized as follows: Cluster 1 (Interstate highway accidents), Cluster 2 (Drunk speeding), Cluster 3 (Non speeding lane departure), Cluster 4 (Vehicle to vehicle) and Cluster 5 (Intersection).% accident scenarios are created
 \end{frame}
 
 \begin{frame}
@@ -324,9 +328,10 @@ SOMs have been used in a study to estimate the effectiveness of Crash Avoidance 
 \begin{itemize}
 \item What incidence dataset could we use? (e.g.: time and space dimensions, magnitude of incidence, type of incidence);
 \item Incidences vs Accidents;
-\item Would it be possible to have two datasets: one for training and one for validation?
+\item Would it be possible to have two datasets: one for training and one for validation?%prevent over-fitting of the data
 \item What type of predictive dataset do we have (e.g.: road geometry, road characteristics, traffic density) ?
-\item How accurate are these datasets (measuring errors, etc)?
+\item How accurate are these datasets (measuring errors, etc)?%Sometimes a spatial aggregation can be recommended, for getting rid of location error, and
+%also to increase the magnitude of the results.
 \end{itemize}
 \end{frame}
 
@@ -377,7 +382,7 @@ These are examples of other traffic-related studies, that do not focus on incide
   \bibitem{infrared} Lili Zhang and Erzzebet Merenyi and William M. Grundy and Eliot F. Young {\em An SOM-Hybrid Supervised Model for the Prediction of Underlying Physical Parameters from Near-Infrared Planetary Spectra}. Advances in Self-Organizing Maps, 7th International Workshop, WSOM 2009, USA, pp. 362-372, 2012.
   \bibitem{crash} Hitoshi Uno and Yusuke Kageyama and Akira Yamaguchi and Tomosaburo Okabe {\em Effectiveness study of Crash Avoidance technologies by using Clusteringand Self Organizing Map}. Proceedings of the 23rd International Technical Conference on the Enhanced Safety of Vehicles (ESV), Seoul, South Korea, 2013.
   \bibitem{secondary} Hong Yang and Bekir Bartin and Kaan Ozbay {\em Mining the Characteristics of Secondary Crashes on Highways}. Journal of Transportation Engineering, Vol. 140, No. 4, 2014.  
-  \bibitem{severity} Mahdi Alikhani and Ali Nedaie and Alimohammad Ahmadvand {\em Presentation of clustering-classification heuristic method for improvement accuracy in classification of severity of road accidents in Iran}. Safety Science 60, pp. 142-150 2013.
+  \bibitem{severity} Mahdi Alikhani and Ali Nedaie and Alimohammad Ahmadvand {\em Presentation of clustering-classification heuristic method for improvement accuracy in classification of severity of road accidents in Iran}. Safety Science 60, pp. 142-150, 2013.
   \bibitem{kriging} Brent Selby and Kara M. Kockelman {\em Spatial prediction of traffic levels in unmeasured locations: applications of universal kriging and geographically weighted regression}. Journal of Transport Geography 29, pp. 24-32, 2013.
   \bibitem{ca} Tengda Sun and Jinfeng Wang {\em A traffic cellular automata model based on road network grids and its spatial and temporal resolution's influences on simulation}. Simulation Modelling Practice and Theory, 15, pp. 864-878, 2007.
   \bibitem{congestion} Hari Shankar and P. L. N. Raju and K. Ram Mohan Rao {\em Multi Model Criteria for the Estimation of Road Traffic Congestion from Traffic Flow Information Based on Fuzzy Logic}. Journal of Transportation Technologies, 2, 50-62, 2012.
