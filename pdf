@@ -1,4 +1,5 @@
 pdflatex indra
+#bibtex indra
 pdflatex indra
 okular indra.pdf
 

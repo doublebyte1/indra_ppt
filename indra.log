@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.5.20)  23 MAY 2014 13:04
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.5.20)  26 MAY 2014 12:48
 entering extended mode
  %&-line parsing enabled.
 **indra
@@ -1006,13 +1006,13 @@ File: mwc_nonmwc_1000_0125.png Graphic file (type png)
 
 ] [16
 
-] <accidentmap.png, id=141, 656.4525pt x 731.73375pt>
+] <accidentmap.png, id=146, 656.4525pt x 731.73375pt>
 File: accidentmap.png Graphic file (type png)
 
 <use accidentmap.png> [17
 
  <./accidentmap.png (PNG copy)>]
-<road_network.png, id=149, 532.23843pt x 217.55505pt>
+<road_network.png, id=154, 532.23843pt x 217.55505pt>
 File: road_network.png Graphic file (type png)
  <use road_network.png>
 [18
@@ -1020,27 +1020,27 @@ File: road_network.png Graphic file (type png)
  <./road_network.png (PNG copy)>] [19
 
 ]
-<damage_agent.png, id=161, 322.20375pt x 309.1964pt>
+<damage_agent.png, id=171, 322.20375pt x 309.1964pt>
 File: damage_agent.png Graphic file (type png)
  <use damage_agent.png>
-Overfull \vbox (21.4973pt too high) detected at line 210
+Overfull \vbox (21.4973pt too high) detected at line 211
  []
 
 [20
 
  <./damage_agent.png (PNG copy)>]
-<damage2.png, id=167, 316.93407pt x 520.04597pt>
+<damage2.png, id=179, 316.93407pt x 520.04597pt>
 File: damage2.png Graphic file (type png)
  <use damage2.png>
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 231.
+(Font)              <10.95> on input line 232.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 231.
+(Font)              <8> on input line 232.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 231.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 232.
 
 
-Overfull \vbox (17.5243pt too high) detected at line 231
+Overfull \vbox (17.5243pt too high) detected at line 232
  []
 
 [21
@@ -1056,7 +1056,7 @@ Overfull \vbox (17.5243pt too high) detected at line 231
 ] [26
 
 ]
-<colors.png, id=199, 542.025pt x 387.4475pt>
+<colors.png, id=220, 542.025pt x 387.4475pt>
 File: colors.png Graphic file (type png)
  <use colors.png>
 Overfull \vbox (10.36826pt too high) detected at line 259
@@ -1080,7 +1080,7 @@ Overfull \vbox (10.36826pt too high) detected at line 259
 
 [29
 
-] <som2.png, id=221, 761.84625pt x 715.67375pt>
+] <som2.png, id=245, 761.84625pt x 715.67375pt>
 File: som2.png Graphic file (type png)
  <use som2.png>
 Overfull \vbox (25.92761pt too high) detected at line 269
@@ -1088,7 +1088,7 @@ Overfull \vbox (25.92761pt too high) detected at line 269
 
 [30
 
- <./som2.png (PNG copy)>] <poverty1.jpg, id=229, 501.875pt x 295.1025pt>
+ <./som2.png (PNG copy)>] <poverty1.jpg, id=254, 501.875pt x 295.1025pt>
 File: poverty1.jpg Graphic file (type jpg)
 
 <use poverty1.jpg>
@@ -1096,7 +1096,7 @@ Overfull \hbox (58.48265pt too wide) in paragraph at lines 291--291
  [] 
  []
 
-<poverty2.jpg, id=230, 501.875pt x 278.03876pt>
+<poverty2.jpg, id=255, 501.875pt x 278.03876pt>
 File: poverty2.jpg Graphic file (type jpg)
  <use poverty2.jpg>
 Overfull \hbox (23.35547pt too wide) in paragraph at lines 291--291
@@ -1122,13 +1122,16 @@ Overfull \hbox (23.35547pt too wide) in paragraph at lines 291--291
 ]
 [39
 
-]
-Overfull \vbox (131.55742pt too high) detected at line 373
- []
-
-[40
+] [40
 
  </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>]
+[41
+
+
+] [42
+
+
+]
 \tf@nav=\write6
 \openout6 = `indra.nav'.
 
@@ -1138,25 +1141,24 @@ Overfull \vbox (131.55742pt too high) detected at line 373
 \tf@snm=\write8
 \openout8 = `indra.snm'.
 
-
-(./indra.aux) ) 
+ (./indra.aux) ) 
 Here is how much of TeX's memory you used:
- 17070 strings out of 495061
- 314810 string characters out of 1182621
- 378972 words of memory out of 3000000
- 19712 multiletter control sequences out of 15000+50000
+ 17126 strings out of 495061
+ 315861 string characters out of 1182621
+ 384972 words of memory out of 3000000
+ 19752 multiletter control sequences out of 15000+50000
  50942 words of font info for 52 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 49i,11n,57p,451b,649s stack positions out of 5000i,500n,10000p,200000b,50000s
-{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf
-/fonts/enc/dvips/lm/lm-rmtt.enc}</usr/share/texmf/fonts/type1/public/lm/lmss10.
-pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts/
-type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb>
-</usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/typ
-e1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb>
-Output written on indra.pdf (40 pages, 3109232 bytes).
+ 49i,11n,57p,451b,697s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texm
+f/fonts/enc/dvips/lm/lm-rmtt.enc}</usr/share/texmf/fonts/type1/public/lm/lmss10
+.pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb
+></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/ty
+pe1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb>
+Output written on indra.pdf (42 pages, 3133240 bytes).
 PDF statistics:
- 339 PDF objects out of 1000 (max. 8388607)
- 88 named destinations out of 1000 (max. 500000)
+ 403 PDF objects out of 1000 (max. 8388607)
+ 104 named destinations out of 1000 (max. 500000)
  124 words of extra memory for PDF output out of 10000 (max. 10000000)
 

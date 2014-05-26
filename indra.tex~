@@ -133,7 +133,7 @@ Often Data Mining Techniques are combined together, or with traditional statisti
 \item \textbf{Multivariate regression analysis + Bayesian Probabilistic Networks (BPN)}~\cite{bayesian};
 \item Random Forest + Multivariate Adaptive Regression Splies (MARS)~\cite{mars};
 \item Classification and Regression Trees (CART)~\cite{cart};
-\item Genetic Mining Rule + Logit Model~\cite{bayesian};
+\item Genetic Mining Rule + Logit Model~\cite{gmr};
 \item \textbf{Frequent Item Sets}~\cite{sets};
 \item Support Vector Machines (SVM); 
 \item \textbf{Self Organizing Maps (SOM)};
@@ -143,7 +143,7 @@ Often Data Mining Techniques are combined together, or with traditional statisti
 
 \begin{frame}
 \frametitle{Bayesian Approach}
-In this case study[cite] it is used a mixed-model to predict the ocurrence of road accidents:
+In this case study~\cite{bayesian} it is used a mixed-model to predict the ocurrence of road accidents:
 \begin{itemize}
 \item<2-> Multivariate Poisson-lognormal regression analysis, which facilitates taking into account the covariance structure of the model response variables as well as
 over-dispersion effects.
@@ -155,7 +155,7 @@ The methodology is illustrated using data of the Austrian rural motorway network
 
 \begin{frame}
 \frametitle{Association Algorithm}
-In this case study[cite] an association algorithm is used to obtain a descriptive analysis of accident high risk areas. This algorithm \textbf{identifies the accident circumstances that frequently occur together}. We are able to target the highest frequencies through a \textit{minimum support value}.\\
+In this case study~\cite{sets} an association algorithm is used to obtain a descriptive analysis of accident high risk areas. This algorithm \textbf{identifies the accident circumstances that frequently occur together}. We are able to target the highest frequencies through a \textit{minimum support value}.\\
 This algorithm was applied to road accident data in Belgian (1997-1999). 
 %The dataset is long enough to limit random fluctuations in the accident counts and short enough to limit changes in road and traffic conditions.
 Some factors that were frequently linked to accidents:
@@ -170,8 +170,9 @@ Some of these risk factors could be reduced with signing or roundabouts in these
 
 \begin{frame}
 \frametitle{What About Space?}
+ \small{\center{\textit{Everything is related to everything else, but closer things are more closely related.}}\\ \hfill Tobler, 1970}
 \begin{figure}
-\includegraphics[scale=0.25]{accidentmap.png}
+\includegraphics[scale=0.2]{accidentmap.png}
 \caption{\tiny{Heat map of road accidents in Moscow; source: {\url http://mapsforhumans.com/2011/07/road-accidents-heat-map-of-moscow/}}}
 \end{figure}
 \end{frame}
@@ -184,28 +185,28 @@ Road incidences happen in time and \textbf{space}. The contact with the spatial 
 The most frequent approach to represent the road structure is to use networks. Networks represent lanes as \textit{links} and intersections as \textit{nodes}.
 \begin{figure}
 \includegraphics[scale=0.40]{road_network.png}
-\caption{\tiny{Road network in  Hillsborough [cite]}}
+\caption{\tiny{Road network in  Hillsborough~\cite{zeng}}}
 \end{figure}
 For longer roads, it may be actually useful to split them into \textbf{homogeneous sections}. %There are also \textit{gridifications} of these networks [cite].
 \end{frame}
 
 \begin{frame}
 \frametitle{What About Space? (cont.)}
-But the space dimension does not end up in the representation of the input variables (implicit). Space \textbf{relationships should also be explicitly stated in the model}.
+But the space dimension does not cease in the representation of the input variables (implicit). Space \textbf{relationships should also be explicitly stated in the model}.
 \begin{itemize}
 \item Spatial Auto correlation (as opposed to spatial independence) is an arrangement of the accidents where the locations are related to each other.
-\item Numerous studies have shown that accounting for spatial correlation among the analyzed observations is a big step toward a better safety assessment [cite].
-\item This is actually a \textit{weakness} of many models; on the Baysean Network model [cite], although acknowledged, spatial correlations were not considered in the development of the risk model; on conditionally autoregressive models (CAR) spatial effects are introduced as random.
+\item Numerous studies have shown that accounting for spatial correlation among the analyzed observations is a big step toward a better safety assessment~\cite{zeng}.
+\item This is actually a \textit{weakness} of many models; on the Baysean Network model~\cite{bayesian}, although acknowledged, spatial correlations were not considered in the development of the risk model; on conditionally autoregressive models (CAR) spatial effects are introduced as random.
 \end{itemize}
 Geographical Information Systems (GIS) can be a valuable tool for representing/integrating the different variables on a geographical space.
 \end{frame}
 
 \begin{frame}
 \frametitle{Considering Space: A Simple Example}
-Study of how circumstances affect people in episodes of bad weather [cite].Data from newspappers was collected for a period of 10 yrs, in the region of Calabria.
+Study of how circumstances affect people in episodes of bad weather~\cite{calabria}.Data from newspappers was collected for a period of 10 yrs, in the region of Calabria.
 \begin{figure}
 \includegraphics[scale=0.55]{damage_agent.png}
-\caption{\tiny{Localisation of damage to people sorted according to the type of damaging agent. (1) Victims, (2) injured, and (3) involved people [cite]}}
+\caption{\tiny{Localisation of damage to people sorted according to the type of damaging agent. (1) Victims, (2) injured, and (3) involved people~\cite{calabria}}}
 \end{figure}
 \end{frame}
 
@@ -215,7 +216,7 @@ Study of how circumstances affect people in episodes of bad weather [cite].Data 
   \begin{column}{0.5\textwidth}
     \begin{figure}
     \includegraphics[scale=0.4]{damage2.png}
-    \caption{\tiny{ Localisation of damage to people along the Calabria road network [cite]}}    
+    \caption{\tiny{ Localisation of damage to people along the Calabria road network~\cite{calabria}}}    
     \end{figure}
   \end{column}
   \begin{column}{0.5\textwidth}  
@@ -232,8 +233,7 @@ Study of how circumstances affect people in episodes of bad weather [cite].Data 
 
 \begin{frame}
 \frametitle{Considering Space: A more complex example}
-The Self Organizing Map (SOM) is an artificial neural network based on an unsupervised learning process that performs a gradual and nonlinear mapping of high dimensional input data onto
-an ordered and structured array of nodes, generally of lower dimension [cite].
+The Self Organizing Map (SOM) is an artificial neural network based on an unsupervised learning process that performs a gradual and nonlinear mapping of high dimensional input data onto an ordered and structured array of nodes, generally of lower dimension~\cite{gorricha}.
 \begin{itemize}
 \item <1-> The SOM compresses information and reduces dimensionality;
 \item <2-> It transforms nonlinear statistical relationships in geometric relationships;
@@ -245,7 +245,7 @@ an ordered and structured array of nodes, generally of lower dimension [cite].
 
 \begin{frame}
 \frametitle{Self Organizing Maps}
-The process of creating SOMs undergoes two main stages[cite]:
+The process of creating SOMs undergoes two main stages~\cite{goat}:
 \small{
 \begin{itemize}
 \item <2-> training: vector quantitization; the neurons \textit{adjust} their weights to the input vector;
@@ -271,7 +271,7 @@ The process of creating SOMs undergoes two main stages[cite]:
 \begin{frame}
 \frametitle{Self Organizing Maps (cont.)}
 When applied to geo-referenced data, this technique may allow the
-explanation of complex structures and phenomena in a spatial perspective [cite].\\
+explanation of complex structures and phenomena in a spatial perspective~\cite{gorricha}.\\
 \vspace{5mm}
 Going back to geographical space:
 %we transformed the data space in output space, but we can go back to the data space
@@ -294,15 +294,14 @@ Going back to geographical space:
 \frametitle{Self Organizing Maps (cont.)}
 SOM's have been used for estimating:
 \begin{itemize}
-\item the risk for cancer patients (demonstrated accuracy in classification) [cite];
-\item underlying physical parameters from near infrared planetary spectra (83\%-100\% accuracy) [cite];
-\item the distance of an astronomic object based on its color (when compared to other techniques offer a competitive choice in terms of low-RMSE, and percentage of outliers) [cite];
+\item the risk for cancer patients (demonstrated accuracy in classification)~\cite{cancer};
+\item underlying physical parameters from near infrared planetary spectra (83\%-100\% accuracy)~\cite{infrared};
+\item the distance of an astronomic object based on its color (when compared to other techniques offer a competitive choice in terms of low-RMSE, and percentage of outliers)~\cite{redshift};
 %root-mean-square error
-\item productivity of goat and sheep farms, based on herd management practices (the results
-are coherent with the animal science criteria that are common for this problem)[cite];
+\item productivity of goat and sheep farms, based on herd management practices (the results are coherent with the animal science criteria that are common for this problem)~\cite{goat};
 %\item types of accident crashes (e.g.: drunk speeding, intersection, etc)[cite];
 \end{itemize}
-The approach has been showed to be an evidence-based predictive tool with high-knowledge-generation capabilities, very valuable to support decision-making [cite].
+The approach has been showed to be an evidence-based predictive tool with high-knowledge-generation capabilities, very valuable to support decision-making ~\cite{cancer}.
 \end{frame}
 
 \begin{frame}
@@ -312,8 +311,7 @@ The approach has been showed to be an evidence-based predictive tool with high-k
 \item We want to propose a SOM to capture and extract the essence of these relationships by visualizing the results of incidence clustering.
 \item Moreover, we want to be able to predict these clusters of incidences, for a new set of input variables.
 \end{itemize}
-SOMs have been used in a study to estimate the effectiveness of Crash Avoidance technologies [cite]. They identified and characterized clusters of accidents, based on
-the relationships between (normalized) variables.
+SOMs have been used in a study to estimate the effectiveness of Crash Avoidance technologies~\cite{crash}. They identified and characterized clusters of accidents, based on the relationships between (normalized) variables.
 \begin{itemize}
 \item <2-> 1 year of data (2010);
 \item <3-> 16,180 fatal passenger car drivers;
@@ -326,30 +324,32 @@ the relationships between (normalized) variables.
 \begin{itemize}
 \item What incidence dataset could we use? (e.g.: time and space dimensions, magnitude of incidence, type of incidence);
 \item Incidences vs Accidents;
-\item It would be useful to have two datasets: one for training and one for validation;
+\item Would it be possible to have two datasets: one for training and one for validation?
 \item What type of predictive dataset do we have (e.g.: road geometry, road characteristics, traffic density) ?
 \item How accurate are these datasets (measuring errors, etc)?
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Targeting More Specific Aspects of Incidences:}
+\frametitle{More: Targeting Specific Aspects of Incidences:}
+These are examples of studies that focus on specific aspects of road incidences:
 \begin{itemize}
-\item Identify and describe secondary crashes;
-\item Identify hots pots or "black zones", and model their behaviour;
-\item Model crashes at specific type of road entity (e.g.: unsignalised intersections);
-\item Classify road accidents;
+\item Identify and describe secondary crashes~\cite{secondary};%developed analysis framework : identify and describe secondary crashes
+\item Identify hots pots or "black zones", and model their behaviour~\cite{bayesian};
+\item Model crashes at specific type of road entity (e.g.: unsignalised intersections)~\cite{mars};%mars model
+\item Model accident severity (casualties or damages)~\cite{severity};%casualties or damages; classification that leads to prediction
 \end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Other Relevant Studies:}
+\frametitle{More: Other Relevant Studies:}
+These are examples of other traffic-related studies, that do not focus on incidences:
 \begin{itemize}
-\item Predict traffic levels in unmeasured locations (Kriging)[cite];
-\item Estimation of road traffic congestion (MCE, ANN)[cite];
-\item Traffic simulation model (CA)[cite];
-\item Traffic Forecast System[cite];
-\item Predict travel time [cite];
+\item Predict traffic levels in unmeasured locations (Kriging)~\cite{kriging};
+\item Evaluate the level of road traffic congestion (MCE, ANN)~\cite{congestion};%traffic jam. evaluated by measuring accuracy of outputs against human opinion.
+\item Traffic simulation model (CA)~\cite{ca};%Large scale microscopic traffic simulation using CA is simpler to implement on computers, provides a sim- ple physical picture of the system and can be easily modified to deal with different aspects of traffic. However,
+%\item Traffic Forecast System[cite];
+\item Predict travel time~\cite{traveltime};%use data-mining techniques, K-means, NN, etc
 \end{itemize}
 \end{frame}
 
@@ -358,18 +358,32 @@ the relationships between (normalized) variables.
 %3D viz: give some "eye candy" examples
 %\end{frame}
 
-\begin{frame}
+\begin{frame}[allowframebreaks]
 \frametitle{References}
- \begin{thebibliography}{1}
+\tiny{
+ \begin{thebibliography}{ab}
   \bibitem{calabria} O. Petrucci and A. A. Pasqua {\em Damaging events along roads during bad weather periods: a case study in Calabria (Italy)}. Nat. Hazards Earth Syst. Sci., 12, 365-378, 2012. 
-  \bibitem{bayesian} Markus Deublein and Matthias Schubert and Bryan T. Adey and Jochen Kohler and Michael H. Faber {\em Prediction of road accidents: A Bayesian hierarchical approach
-}. Accident Analysis \& Prevention 51, 274-291, 2013.
+  \bibitem{bayesian} Markus Deublein and Matthias Schubert and Bryan T. Adey and Jochen Kohler and Michael H. Faber {\em Prediction of road accidents: A Bayesian hierarchical approach}. Accident Analysis \& Prevention 51, 274-291, 2013.
   \bibitem{sets} Karolien Geurts and Isabelle Thomas and Geert Wets {\em Understanding spatial concentrations of road accidents using frequent item sets}. Accident Analysis and Prevention 37, 787-799, 2005.
   \bibitem{zeng} Qiang Zeng and Helai Huang {\em Bayesian spatial joint modeling of traffic crashes on an urban road network}. Accident Analysis \& Prevention 67, 105-112, 2014.
   \bibitem{gmr} Yu-Chiun Chiou and Lawrence W. Lan and Wen-Pin Chen {\em A two-stage mining framework to explore key risk conditions on one-vehicle crash severity}. Accident Analysis \& Prevention 50, 405-415, 2013.
   \bibitem{cart} Li-Yen Chang and Wen-Chieh Chen {\em Data mining of tree-based models to analyze freeway accident frequency}. Journal of Safety Research 36, 365-375, 2005.
   \bibitem{mars} Mohamed Abdel-Aty and Kirolos Haleem {\em Analyzing angle crashes at unsignalized intersections using machine learning techniques}. Accident Analysis \& Prevention 43, 461-470, 2011.
+  \bibitem{gorricha} Jorge Manuel Lourenco Gorricha {\em Visualization of Clusters in Geo-referenced Data Using Three-dimensional Self-Organizing Maps}. Dissertation Submitted in Partial Fulfillment of the Requirements for the Degree of Master in Statistics and Information Management, Instituto Superior de Estatistica e Gestao de Informacao da Universidade Nova de Lisboa, 2009.
+  \bibitem{goat} R. Magdalena and C. Fernandez and J. D. Martin and E. Soria and M.Martinez and M. J. Navarro and C. Mata {\em Qualitative analysis of goat and sheep production data using self-organizing maps}. Expert Systems, The Journal of Knowledge and Engineering, vol. 26, n 2, 2009.
+  \bibitem{cancer} Leonid Churilov and Adyl Bagirov and Daniel Schwartz and Kate Smith and Michael Dally {\em Data Mining with Combined Use of Optimization Techniques and Self-Organizing Maps for Improving Risk Grouping Rules: Application to Prostate Cancer Patients}. Journal of Management Information Sy.vton.v/Spring 2005, Vol. 21, No. 4. pp. 85-100, 2005.  
+  \bibitem{redshift} M. J. Way and C. D. Klose {\em Can Self-Organizing Maps Accurately Predict Photometric Redshifts?}. (s): M. J. Way and C. D. Klose
+ Publications of the Astronomical Society of the Pacific, Vol. 124, No. 913 pp. 274-279, 2012.
+  \bibitem{infrared} Lili Zhang and Erzzebet Merenyi and William M. Grundy and Eliot F. Young {\em An SOM-Hybrid Supervised Model for the Prediction of Underlying Physical Parameters from Near-Infrared Planetary Spectra}. Advances in Self-Organizing Maps, 7th International Workshop, WSOM 2009, USA, pp. 362-372, 2012.
+  \bibitem{crash} Hitoshi Uno and Yusuke Kageyama and Akira Yamaguchi and Tomosaburo Okabe {\em Effectiveness study of Crash Avoidance technologies by using Clusteringand Self Organizing Map}. Proceedings of the 23rd International Technical Conference on the Enhanced Safety of Vehicles (ESV), Seoul, South Korea, 2013.
+  \bibitem{secondary} Hong Yang and Bekir Bartin and Kaan Ozbay {\em Mining the Characteristics of Secondary Crashes on Highways}. Journal of Transportation Engineering, Vol. 140, No. 4, 2014.  
+  \bibitem{severity} Mahdi Alikhani and Ali Nedaie and Alimohammad Ahmadvand {\em Presentation of clustering-classification heuristic method for improvement accuracy in classification of severity of road accidents in Iran}. Safety Science 60, pp. 142-150 2013.
+  \bibitem{kriging} Brent Selby and Kara M. Kockelman {\em Spatial prediction of traffic levels in unmeasured locations: applications of universal kriging and geographically weighted regression}. Journal of Transport Geography 29, pp. 24-32, 2013.
+  \bibitem{ca} Tengda Sun and Jinfeng Wang {\em A traffic cellular automata model based on road network grids and its spatial and temporal resolution's influences on simulation}. Simulation Modelling Practice and Theory, 15, pp. 864-878, 2007.
+  \bibitem{congestion} Hari Shankar and P. L. N. Raju and K. Ram Mohan Rao {\em Multi Model Criteria for the Estimation of Road Traffic Congestion from Traffic Flow Information Based on Fuzzy Logic}. Journal of Transportation Technologies, 2, 50-62, 2012.
+  \bibitem{traveltime} Chi-Sen Li and Mu-Chen Chen {\em A data mining based approach for travel time prediction in freeway with non-recurrent congestion}. Neurocomputing, 133, pp.74-83, 2014.
   \end{thebibliography}
+ }
 \end{frame}
 
 \end{document}
