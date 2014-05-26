@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.5.20)  26 MAY 2014 13:14
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.5.20)  26 MAY 2014 17:49
 entering extended mode
  %&-line parsing enabled.
 **indra
@@ -915,199 +915,206 @@ Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \c@lstlisting=\count165
  (./indra.nav)
-<som.png, id=15, 416.30531pt x 241.65282pt>
-File: som.png Graphic file (type png)
- <use som.png> [1
+<cover.png, id=12, 812.03375pt x 610.28pt>
+File: cover.png Graphic file (type png)
+ <use cover.png> [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./som.png (PNG copy)>] [2
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./cover.png (PNG copy)>] [
+2
+
+] [3
 
 ]
 <world_accidents.png, id=40, 1028.84375pt x 731.73375pt>
 File: world_accidents.png Graphic file (type png)
 
 <use world_accidents.png>
-LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 62.
+LaTeX Font Info:    Try loading font information for OT1+lmtt on input line 78.
 
  (/usr/share/texmf/tex/latex/lm/ot1lmtt.fd
 File: ot1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 62.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 78.
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 62.
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 78.
 
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 62.
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 78.
 
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 62.
+(Font)              <6> on input line 78.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 62.
-LaTeX Font Info:    Try loading font information for U+msa on input line 62.
+(Font)              <5> on input line 78.
+LaTeX Font Info:    Try loading font information for U+msa on input line 78.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 62.
+LaTeX Font Info:    Try loading font information for U+msb on input line 78.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <6> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 62.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 78.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <5> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 62.
- [3
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 78.
+ [4
 
- <./world_accidents.png>] [4
+ <./world_accidents.png>] [5
 
-] [5
+] <table.png, id=63, 767.86874pt x 239.39438pt>
+File: table.png Graphic file (type png)
+ <use table.png>
+Overfull \vbox (19.1853pt too high) detected at line 118
+ []
 
-] [6
+[6
 
-] [7
+ <./table.png (PNG copy)>] [7
 
-]
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 114.
-
-LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 114.
-
- [8
+] [8
 
 ] [9
 
 ] [10
 
 ]
-<mwc_nonmwc_1000_0125.png, id=101, 744.53156pt x 423.08063pt>
-File: mwc_nonmwc_1000_0125.png Graphic file (type png)
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10.95> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 153.
 
-<use mwc_nonmwc_1000_0125.png> [11
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <10> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 153.
 
- <./mwc_nonmwc_1000_0125.png (PNG copy)>]
-[12
+ [11
+
+] [12
 
 ] [13
 
-] [14
+]
+<mwc_nonmwc_1000_0125.png, id=126, 744.53156pt x 423.08063pt>
+File: mwc_nonmwc_1000_0125.png Graphic file (type png)
 
-] <accidentmap.png, id=134, 656.4525pt x 731.73375pt>
+<use mwc_nonmwc_1000_0125.png> [14
+
+ <./mwc_nonmwc_1000_0125.png (PNG copy)>]
+[15
+
+] [16
+
+] [17
+
+] <accidentmap.png, id=157, 656.4525pt x 731.73375pt>
 File: accidentmap.png Graphic file (type png)
 
-<use accidentmap.png> [15
+<use accidentmap.png> [18
 
  <./accidentmap.png (PNG copy)>]
-<road_network.png, id=142, 532.23843pt x 217.55505pt>
+<road_network.png, id=165, 532.23843pt x 217.55505pt>
 File: road_network.png Graphic file (type png)
  <use road_network.png>
-[16
+[19
 
- <./road_network.png (PNG copy)>] [17
+ <./road_network.png (PNG copy)>] [20
 
 ]
-<damage_agent.png, id=158, 322.20375pt x 309.1964pt>
+<damage_agent.png, id=182, 322.20375pt x 309.1964pt>
 File: damage_agent.png Graphic file (type png)
  <use damage_agent.png>
-Overfull \vbox (21.4973pt too high) detected at line 214
+Overfull \vbox (21.4973pt too high) detected at line 253
  []
 
-[18
+[21
 
  <./damage_agent.png (PNG copy)>]
-<damage2.png, id=166, 316.93407pt x 520.04597pt>
+<damage2.png, id=190, 316.93407pt x 520.04597pt>
 File: damage2.png Graphic file (type png)
  <use damage2.png>
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 235.
+(Font)              <10.95> on input line 274.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 235.
+(Font)              <8> on input line 274.
 LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <8> not available
-(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 235.
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 274.
 
 
-Overfull \vbox (17.5243pt too high) detected at line 235
+Overfull \vbox (17.5243pt too high) detected at line 274
  []
 
-[19
+[22
 
- <./damage2.png (PNG copy)>] [20
-
-] [21
-
-] [22
-
-] [23
+ <./damage2.png (PNG copy)>] [23
 
 ] [24
 
-]
-<colors.png, id=207, 542.025pt x 387.4475pt>
-File: colors.png Graphic file (type png)
- <use colors.png>
-Overfull \vbox (10.36826pt too high) detected at line 262
- []
+] [25
 
-[25
+] [26
 
- <./colors.png (PNG copy)>]
-File: colors.png Graphic file (type png)
- <use colors.png>
-Overfull \vbox (10.36826pt too high) detected at line 262
- []
-
-[26
+] [27
 
 ]
+<colors.png, id=231, 542.025pt x 387.4475pt>
 File: colors.png Graphic file (type png)
  <use colors.png>
-Overfull \vbox (10.36826pt too high) detected at line 262
- []
-
-[27
-
-] <som2.png, id=233, 761.84625pt x 715.67375pt>
-File: som2.png Graphic file (type png)
- <use som2.png>
-Overfull \vbox (25.92761pt too high) detected at line 272
+Overfull \vbox (10.36826pt too high) detected at line 301
  []
 
 [28
 
- <./som2.png (PNG copy)>] <poverty1.jpg, id=242, 501.875pt x 295.1025pt>
-File: poverty1.jpg Graphic file (type jpg)
-
-<use poverty1.jpg>
-Overfull \hbox (58.48265pt too wide) in paragraph at lines 294--294
- [] 
- []
-
-<poverty2.jpg, id=243, 501.875pt x 278.03876pt>
-File: poverty2.jpg Graphic file (type jpg)
- <use poverty2.jpg>
-Overfull \hbox (23.35547pt too wide) in paragraph at lines 294--294
- [] 
+ <./colors.png (PNG copy)>]
+File: colors.png Graphic file (type png)
+ <use colors.png>
+Overfull \vbox (10.36826pt too high) detected at line 301
  []
 
 [29
 
- <./poverty1.jpg> <./poverty2.jpg>] [30
+]
+File: colors.png Graphic file (type png)
+ <use colors.png>
+Overfull \vbox (10.36826pt too high) detected at line 301
+ []
 
-] [31
+[30
 
-] [32
+] <som2.png, id=256, 761.84625pt x 715.67375pt>
+File: som2.png Graphic file (type png)
+ <use som2.png>
+Overfull \vbox (25.92761pt too high) detected at line 311
+ []
 
-] [33
+[31
+
+ <./som2.png (PNG copy)>] <poverty1.jpg, id=266, 501.875pt x 295.1025pt>
+File: poverty1.jpg Graphic file (type jpg)
+
+<use poverty1.jpg>
+Overfull \hbox (58.48265pt too wide) in paragraph at lines 333--333
+ [] 
+ []
+
+<poverty2.jpg, id=267, 501.875pt x 278.03876pt>
+File: poverty2.jpg Graphic file (type jpg)
+ <use poverty2.jpg>
+Overfull \hbox (23.35547pt too wide) in paragraph at lines 333--333
+ [] 
+ []
+
+[32
+
+ <./poverty1.jpg> <./poverty2.jpg>] [33
 
 ] [34
 
@@ -1115,16 +1122,25 @@ Overfull \hbox (23.35547pt too wide) in paragraph at lines 294--294
 
 ] [36
 
-]
-[37
+] [37
 
 ] [38
 
+]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 398.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 398.
+LaTeX Font Info:    Font shape `OT1/lmss/m/it' in size <7> not available
+(Font)              Font shape `OT1/lmss/m/sl' tried instead on input line 398.
+
+ [39
+
+]
+[40
+
  </usr/share/texmf/tex/latex/beamer/base/art/beamericonarticle.pdf>]
-[39
-
-
-] [40
+[41
 
 
 ]
@@ -1139,22 +1155,23 @@ Overfull \hbox (23.35547pt too wide) in paragraph at lines 294--294
 
  (./indra.aux) ) 
 Here is how much of TeX's memory you used:
- 17123 strings out of 495061
- 315839 string characters out of 1182621
- 384972 words of memory out of 3000000
- 19753 multiletter control sequences out of 15000+50000
- 53657 words of font info for 53 fonts, out of 3000000 for 9000
+ 17087 strings out of 495061
+ 315062 string characters out of 1182621
+ 382738 words of memory out of 3000000
+ 19718 multiletter control sequences out of 15000+50000
+ 64623 words of font info for 66 fonts, out of 3000000 for 9000
  28 hyphenation exceptions out of 8191
- 49i,11n,57p,493b,697s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,11n,57p,390b,878s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texm
 f/fonts/enc/dvips/lm/lm-rmtt.enc}</usr/share/texmf/fonts/type1/public/lm/lmss10
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmss12.pfb></usr/share/texmf/fonts
-/type1/public/lm/lmss8.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb
-></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/ty
-pe1/public/lm/lmsso8.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb>
-Output written on indra.pdf (40 pages, 3131272 bytes).
+/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/lm/lmss8.pfb><
+/usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share/texmf/fonts/typ
+e1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso8.pfb></u
+sr/share/texmf/fonts/type1/public/lm/lmtt8.pfb>
+Output written on indra.pdf (41 pages, 3157272 bytes).
 PDF statistics:
- 390 PDF objects out of 1000 (max. 8388607)
- 100 named destinations out of 1000 (max. 500000)
- 124 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 391 PDF objects out of 1000 (max. 8388607)
+ 96 named destinations out of 1000 (max. 500000)
+ 141 words of extra memory for PDF output out of 10000 (max. 10000000)
 

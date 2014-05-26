@@ -3,13 +3,13 @@
 \usepackage{lmodern}
 \usepackage{hyperref}
 \usepackage{caption}
- 
-\title{Predictive Analysis of Road Incidences}   
-\subtitle{Exploratory Lines}
-\author{BDigital} 
-\date{\today} 
-\titlegraphic{\includegraphics[width=.45\textwidth,height=.35\textheight]{som.png}}
- 
+  
+%\title{Predictive Analysis of Road Incidences}   
+%\subtitle{Exploratory Lines}
+%\author{BDigital} 
+%\date{\today} 
+%\titlegraphic{\includegraphics[width=.45\textwidth,height=.35\textheight]{som.png}}
+
 \usepackage{beamerthemeshadow}
 %\usepackage{beamerthemesplit}
 \usepackage{listings}
@@ -34,9 +34,25 @@
 
 \setbeamertemplate{footline}[page number]
 \setbeamertemplate{navigation symbols}{}
-\begin{frame}
-\titlepage
-\end{frame} 
+
+%\begin{frame}
+%\titlepage
+%\end{frame} 
+
+ \begin{frame}
+\huge
+{ \centering
+\begin{figure}
+\includegraphics[scale=0.35]{cover.png}
+\end{figure}
+}
+\end{frame}
+
+ \begin{frame}
+\huge
+{ \centering
+Introduction}
+\end{frame}
  
 \begin{frame}
 \frametitle{Introduction}
@@ -86,11 +102,34 @@ Some of these variables are continuous in \textbf{space} and most of them change
 \end{frame}
 
 \begin{frame}
+   \begin{block}{General Characteristics of Incidences Datasets:}
+    \begin{itemize}      
+      \item small observed mean values and a large number of zero counts (leads to \textbf{over-dispersion});
+      \item \textbf{nonlinear} relationships between explanatory and response variables;
+      \item \textbf{covariance} between explanatory variables;
+      \item \textbf{spatial autocorrelation}: the value of samples taken close to each other are more likely to have similar magnitude than by chance alone;      
+    \end{itemize}      
+    \end{block}
+\begin{figure}
+\caption{data for a freeway in Taiwan, with 373 Km~\cite{cart}}
+\includegraphics[scale=0.4]{table.png}
+\end{figure}
+%ADT=Average daily traffic
+\end{frame}
+
+\begin{frame}
+\huge
+{ \centering
+Context Overview}
+\end{frame}
+
+% HOW IS DATA?
+\begin{frame}
 \frametitle{Modelling Approaches: Classical Statistics}
 \begin{itemize}
-\item<1-> The most common approach applied in early works is to model the interaction between each dependent variable and incidence frequencies by means of conventional (multiple) linear regression models~\cite{bayesian}; these \textbf{do not take in account covariance between response variables}. 
-\item<2-> Most of these models use a Normal or Poisson distribution that is not well-suited to the scarce nature of incidence data. Accident data is often characterized by small observed mean values and a large number of zero counts leading to the well discussed phenomenon of \textbf{over-dispersion}: the presence of greater variability (statistical dispersion) in a data set than would be expected based on a given simple statistical model.%sparse data  in large contingency tables.
-\item<3-> None of these models addresses explicitly the question of \textbf{spatial autocorrelation}: the value of samples taken close to each other are more likely to have similar magnitude than by chance alone.
+\item<1-> The most common approach applied in early works is to model the interaction between each dependent variable and incidence frequencies by means of conventional (multiple) linear regression models~\cite{bayesian}; these \textbf{do not take in account covariance between explanatory variables}. 
+\item<2-> Most of these models use a Normal or Poisson distribution that is not well-suited to the scarce nature of incidence data. Often there is a greater variability (statistical dispersion) in a data set than would be expected based on a given simple statistical model (\textbf{over-dispersion}).
+\item<3-> None of these models addresses explicitly the question of \textbf{spatial autocorrelation};
 \end{itemize}
 \end{frame}
 
@@ -308,9 +347,15 @@ The approach has been showed to be an \textbf{evidence-based predictive tool wit
 \end{frame}
 
 \begin{frame}
+\huge
+{ \centering
+Model Proposal}
+\end{frame}
+
+\begin{frame}
 \frametitle{SOMs and Road Incidences}
+Real-world road incidences are characterized by complicated multi-dimensionality mutual relationships.
 \begin{itemize}
-\item Real-world road incidences are characterized by complicated multi-dimensionality mutual relationships.
 \item We want to propose a SOM to capture and extract the essence of these relationships by \textbf{visualizing the results of incidence clustering}.
 \item Moreover, we want to be able to \textbf{predict these clusters of incidences}, for a new set of input variables.
 \end{itemize}
@@ -325,39 +370,32 @@ SOMs have been used in a study to estimate the effectiveness of Crash Avoidance 
 
 \begin{frame}
 \frametitle{Discussion}
-\begin{itemize}
-\item What incidence dataset could we use? (e.g.: time and space dimensions, magnitude of incidence, type of incidence);
-\item Incidences vs Accidents;
-\item Would it be possible to have two datasets: one for training and one for validation?%prevent over-fitting of the data
-\item What type of predictive dataset do we have (e.g.: road geometry, road characteristics, traffic density) ?
-\item How accurate are these datasets (measuring errors, etc)?%Sometimes a spatial aggregation can be recommended, for getting rid of location error, and
-%also to increase the magnitude of the results.
-\end{itemize}
+\small
+\begin{columns}
+  \begin{column}{0.5\textwidth}  
+  \begin{itemize}
+  \item What incidence dataset could we use? (e.g.: time and space dimensions, magnitude of incidence, type of incidence);
+  \item Incidences vs Accidents;
+  \item Would it be possible to have two datasets: one for training and one for validation?%prevent over-fitting of the data
+  \item What type of predictive dataset do we have (e.g.: road geometry, road characteristics, traffic density) ?
+  \item How accurate are these datasets (measuring errors, etc)?%Sometimes a spatial aggregation can be recommended, for getting rid of location error, and
+  %also to increase the magnitude of the results.
+  \end{itemize}
+  \end{column}
+  \begin{column}{0.5\textwidth}  
+    \begin{block}{Recommended Dataset Characteristics (aprox.):}
+    \begin{itemize}      
+      \item specific type of incident (e.g.: road accidents);
+      \item One year of data;
+      \item +/- geo-located 500 incidences per day;
+      \item Traffic density dataset for the same time period/geographic area;
+      \item Finest possible geographical granularity;
+      \item Similar dataset for calibration;      
+    \end{itemize}      
+    \end{block}
+  \end{column}
+\end{columns}
 \end{frame}
-
-\begin{frame}
-\frametitle{More: Targeting Specific Aspects of Incidences:}
-These are examples of studies that focus on specific aspects of road incidences:
-\begin{itemize}
-\item Identify and describe secondary crashes~\cite{secondary};%developed analysis framework : identify and describe secondary crashes
-\item Identify hots pots or "black zones", and model their behaviour~\cite{bayesian};
-\item Model crashes at specific type of road entity (e.g.: unsignalised intersections)~\cite{mars};%mars model
-\item Model accident severity (casualties or damages)~\cite{severity};%casualties or damages; classification that leads to prediction
-\end{itemize}
-\end{frame}
-
-\begin{frame}
-\frametitle{More: Other Relevant Studies:}
-These are examples of other traffic-related studies, that do not focus on incidences:
-\begin{itemize}
-\item Predict traffic levels in unmeasured locations (Kriging)~\cite{kriging};
-\item Evaluate the level of road traffic congestion (MCE, ANN)~\cite{congestion};%traffic jam. evaluated by measuring accuracy of outputs against human opinion.
-\item Traffic simulation model (CA)~\cite{ca};%Large scale microscopic traffic simulation using CA is simpler to implement on computers, provides a sim- ple physical picture of the system and can be easily modified to deal with different aspects of traffic. However,
-%\item Traffic Forecast System[cite];
-\item Predict travel time~\cite{traveltime};%use data-mining techniques, K-means, NN, etc
-\end{itemize}
-\end{frame}
-
 %\begin{frame}
 %\frametitle{Visualization}
 %3D viz: give some "eye candy" examples
@@ -368,11 +406,11 @@ These are examples of other traffic-related studies, that do not focus on incide
 \tiny{
  \begin{thebibliography}{ab}
   \bibitem{calabria} O. Petrucci and A. A. Pasqua {\em Damaging events along roads during bad weather periods: a case study in Calabria (Italy)}. Nat. Hazards Earth Syst. Sci., 12, 365-378, 2012. 
+  \bibitem{cart} Li-Yen Chang and Wen-Chieh Chen {\em Data mining of tree-based models to analyze freeway accident frequency}. Journal of Safety Research 36, 365-375, 2005.  
   \bibitem{bayesian} Markus Deublein and Matthias Schubert and Bryan T. Adey and Jochen Kohler and Michael H. Faber {\em Prediction of road accidents: A Bayesian hierarchical approach}. Accident Analysis \& Prevention 51, 274-291, 2013.
   \bibitem{sets} Karolien Geurts and Isabelle Thomas and Geert Wets {\em Understanding spatial concentrations of road accidents using frequent item sets}. Accident Analysis and Prevention 37, 787-799, 2005.
   \bibitem{zeng} Qiang Zeng and Helai Huang {\em Bayesian spatial joint modeling of traffic crashes on an urban road network}. Accident Analysis \& Prevention 67, 105-112, 2014.
   \bibitem{gmr} Yu-Chiun Chiou and Lawrence W. Lan and Wen-Pin Chen {\em A two-stage mining framework to explore key risk conditions on one-vehicle crash severity}. Accident Analysis \& Prevention 50, 405-415, 2013.
-  \bibitem{cart} Li-Yen Chang and Wen-Chieh Chen {\em Data mining of tree-based models to analyze freeway accident frequency}. Journal of Safety Research 36, 365-375, 2005.
   \bibitem{mars} Mohamed Abdel-Aty and Kirolos Haleem {\em Analyzing angle crashes at unsignalized intersections using machine learning techniques}. Accident Analysis \& Prevention 43, 461-470, 2011.
   \bibitem{gorricha} Jorge Manuel Lourenco Gorricha {\em Visualization of Clusters in Geo-referenced Data Using Three-dimensional Self-Organizing Maps}. Dissertation Submitted in Partial Fulfillment of the Requirements for the Degree of Master in Statistics and Information Management, Instituto Superior de Estatistica e Gestao de Informacao da Universidade Nova de Lisboa, 2009.
   \bibitem{goat} R. Magdalena and C. Fernandez and J. D. Martin and E. Soria and M.Martinez and M. J. Navarro and C. Mata {\em Qualitative analysis of goat and sheep production data using self-organizing maps}. Expert Systems, The Journal of Knowledge and Engineering, vol. 26, n 2, 2009.
@@ -381,12 +419,12 @@ These are examples of other traffic-related studies, that do not focus on incide
  Publications of the Astronomical Society of the Pacific, Vol. 124, No. 913 pp. 274-279, 2012.
   \bibitem{infrared} Lili Zhang and Erzzebet Merenyi and William M. Grundy and Eliot F. Young {\em An SOM-Hybrid Supervised Model for the Prediction of Underlying Physical Parameters from Near-Infrared Planetary Spectra}. Advances in Self-Organizing Maps, 7th International Workshop, WSOM 2009, USA, pp. 362-372, 2012.
   \bibitem{crash} Hitoshi Uno and Yusuke Kageyama and Akira Yamaguchi and Tomosaburo Okabe {\em Effectiveness study of Crash Avoidance technologies by using Clusteringand Self Organizing Map}. Proceedings of the 23rd International Technical Conference on the Enhanced Safety of Vehicles (ESV), Seoul, South Korea, 2013.
-  \bibitem{secondary} Hong Yang and Bekir Bartin and Kaan Ozbay {\em Mining the Characteristics of Secondary Crashes on Highways}. Journal of Transportation Engineering, Vol. 140, No. 4, 2014.  
-  \bibitem{severity} Mahdi Alikhani and Ali Nedaie and Alimohammad Ahmadvand {\em Presentation of clustering-classification heuristic method for improvement accuracy in classification of severity of road accidents in Iran}. Safety Science 60, pp. 142-150, 2013.
-  \bibitem{kriging} Brent Selby and Kara M. Kockelman {\em Spatial prediction of traffic levels in unmeasured locations: applications of universal kriging and geographically weighted regression}. Journal of Transport Geography 29, pp. 24-32, 2013.
-  \bibitem{ca} Tengda Sun and Jinfeng Wang {\em A traffic cellular automata model based on road network grids and its spatial and temporal resolution's influences on simulation}. Simulation Modelling Practice and Theory, 15, pp. 864-878, 2007.
-  \bibitem{congestion} Hari Shankar and P. L. N. Raju and K. Ram Mohan Rao {\em Multi Model Criteria for the Estimation of Road Traffic Congestion from Traffic Flow Information Based on Fuzzy Logic}. Journal of Transportation Technologies, 2, 50-62, 2012.
-  \bibitem{traveltime} Chi-Sen Li and Mu-Chen Chen {\em A data mining based approach for travel time prediction in freeway with non-recurrent congestion}. Neurocomputing, 133, pp.74-83, 2014.
+  %\bibitem{secondary} Hong Yang and Bekir Bartin and Kaan Ozbay {\em Mining the Characteristics of Secondary Crashes on Highways}. Journal of Transportation Engineering, Vol. 140, No. 4, 2014.  
+  %\bibitem{severity} Mahdi Alikhani and Ali Nedaie and Alimohammad Ahmadvand {\em Presentation of clustering-classification heuristic method for improvement accuracy in classification of severity of road accidents in Iran}. Safety Science 60, pp. 142-150, 2013.
+  %\bibitem{kriging} Brent Selby and Kara M. Kockelman {\em Spatial prediction of traffic levels in unmeasured locations: applications of universal kriging and geographically weighted regression}. Journal of Transport Geography 29, pp. 24-32, 2013.
+  %\bibitem{ca} Tengda Sun and Jinfeng Wang {\em A traffic cellular automata model based on road network grids and its spatial and temporal resolution's influences on simulation}. Simulation Modelling Practice and Theory, 15, pp. 864-878, 2007.
+  %\bibitem{congestion} Hari Shankar and P. L. N. Raju and K. Ram Mohan Rao {\em Multi Model Criteria for the Estimation of Road Traffic Congestion from Traffic Flow Information Based on Fuzzy Logic}. Journal of Transportation Technologies, 2, 50-62, 2012.
+  %\bibitem{traveltime} Chi-Sen Li and Mu-Chen Chen {\em A data mining based approach for travel time prediction in freeway with non-recurrent congestion}. Neurocomputing, 133, pp.74-83, 2014.
   \end{thebibliography}
  }
 \end{frame}
